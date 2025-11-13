@@ -1,9 +1,10 @@
 import React from 'react'
 
-function Card() {
+const Card: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({ children, ...props }) => {
   return (
-    <div>Card</div>
+    <div {...props} className="border rounded shadow p-4" >
+      {children}
+    </div>
   )
-}
-
-export default Card
+}     
+export default Card;

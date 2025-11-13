@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";;
 
-function Button() {
+const Button: React.FC<React.ButtonHTMLAttributes<HTMLButtonElement>> = ({ children, ...props }) => {
   return (
-    <div>Button</div>
-  )
+    <button>
+      {children}
+    </button>
+  );
 }
-
-export default Button
+export default Button;
