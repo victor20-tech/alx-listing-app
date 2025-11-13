@@ -7,7 +7,6 @@ const Home: React.FC = () => {
   };
 
   return (
-    // The section component uses Tailwind classes for styling (e.g., fixed height, centering) [7, 8]
     <section 
       className="relative h-[80vh] bg-cover bg-center bg-no-repeat flex items-center justify-center p-4"
       style={heroStyle}
